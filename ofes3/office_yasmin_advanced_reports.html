@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>مكتب الياسمين | إدارة المبيعات</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap');
+:root{--bg:#f4f7f5;--card:#fff;--ink:#172b27;--muted:#74847f;--brand:#087f63;--brand2:#075b49;--brand-soft:#e5f4ef;--line:#e4ece8;--danger:#c74747;--gold:#d7a94b;--shadow:0 12px 35px rgba(18,55,43,.07)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at top right,#e6f3ed 0,transparent 38%),var(--bg);font-family:'Cairo',Tahoma,Arial,sans-serif;color:var(--ink);min-height:100vh}
+header{position:relative;overflow:hidden;background:linear-gradient(115deg,#073f35 0%,#08785e 58%,#139777 100%);color:#fff;padding:24px max(22px,calc((100% - 1160px)/2));display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;box-shadow:0 8px 28px rgba(4,73,55,.18)}
+header:after{content:"";position:absolute;width:260px;height:260px;border:1px solid #ffffff20;border-radius:50%;left:8%;top:-170px;box-shadow:0 0 0 28px #ffffff09,0 0 0 58px #ffffff08;pointer-events:none}
+header>div{position:relative;z-index:1}header h1{margin:0;font-size:25px;font-weight:900;letter-spacing:.2px}header h1:before{content:"✦";display:inline-grid;place-items:center;width:38px;height:38px;margin-left:10px;border-radius:12px;background:#ffffff20;color:#f8df9d;font-size:21px;vertical-align:middle}header small{display:block;margin-top:4px;color:#d4eee5;font-size:12px}#who{padding:8px 14px;border:1px solid #ffffff45;background:#ffffff17;border-radius:30px;font-size:13px}
+.wrap{max-width:1200px;margin:28px auto;padding:0 18px}.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:22px;margin-bottom:18px;box-shadow:var(--shadow);transition:box-shadow .2s,border-color .2s}.card:hover{border-color:#d5e7df;box-shadow:0 15px 38px rgba(18,55,43,.09)}
+h2{font-size:20px;margin:0 0 15px;font-weight:800;color:#173b31}h3{font-size:17px;margin:0 0 13px;color:#23483d}h4{font-size:16px}.hidden{display:none!important}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px}
+input,select,textarea,button{font:inherit}input,select,textarea{width:100%;padding:12px 14px;border:1px solid #dce7e2;border-radius:12px;background:#fbfdfc;margin:7px 0 14px;color:var(--ink);outline:none;transition:border-color .2s,box-shadow .2s}input:focus,select:focus,textarea:focus{border-color:#39a889;box-shadow:0 0 0 4px #0b8c6b17;background:#fff}input::placeholder{color:#a1ada8}input[type=file]{padding:10px;background:#f8fbf9}label{font-size:13px;color:#52665e;font-weight:800;display:block}
+button{border:0;border-radius:12px;padding:11px 18px;background:linear-gradient(135deg,var(--brand),#0b9873);color:#fff;cursor:pointer;margin:3px;font-weight:800;font-size:13px;box-shadow:0 5px 12px #087f6320;transition:transform .18s,filter .18s,box-shadow .18s}button:hover{filter:brightness(1.04);transform:translateY(-1px);box-shadow:0 8px 17px #087f6330}button:active{transform:translateY(0)}button.secondary{background:var(--brand-soft);color:var(--brand2);box-shadow:none}button.secondary:hover{background:#d5eee5}button.danger{background:#fff0ef;color:var(--danger);box-shadow:none}button.danger:hover{background:#ffe2df}button:disabled{opacity:.5;cursor:not-allowed;transform:none}
+nav{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 18px;padding:10px;background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:0 5px 18px #193d3010;position:sticky;top:8px;z-index:10}.tab{background:transparent;color:#5a7067;box-shadow:none;padding:10px 16px}.tab:hover{background:#eff7f3;color:var(--brand2);box-shadow:none}.tab.active{background:linear-gradient(135deg,#087f63,#0c9874);color:white;box-shadow:0 5px 13px #087f6330}.right{margin-right:auto}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(165px,1fr));gap:13px}.stat{position:relative;overflow:hidden;background:linear-gradient(145deg,#f8fcfa,#eff8f3);border:1px solid #e1eee7;border-radius:16px;padding:17px;color:#63766d;font-size:13px;font-weight:700}.stat:after{content:"";position:absolute;width:75px;height:75px;border-radius:50%;background:#d9eee4;left:-25px;bottom:-38px}.stat b{position:relative;z-index:1;display:block;font-size:23px;margin-top:9px;color:var(--brand2);font-weight:900}
+table{width:100%;border-collapse:separate;border-spacing:0;min-width:620px}th,td{padding:13px 14px;border-bottom:1px solid #edf1ee;text-align:right;font-size:13px}th{color:#52675e;background:#f4f8f5;font-weight:800;white-space:nowrap}th:first-child{border-radius:0 10px 0 0}th:last-child{border-radius:10px 0 0 0}tbody tr:hover{background:#f8fbf9}tbody tr:last-child td{border-bottom:0}.tablewrap{overflow:auto;border:1px solid #eaf0ec;border-radius:13px}.muted{color:var(--muted);font-size:13px;line-height:1.8}
+.product{border:1px solid var(--line);border-radius:17px;padding:12px;background:#fff;min-width:0;transition:transform .2s,box-shadow .2s}.product:hover{transform:translateY(-3px);box-shadow:0 12px 25px #183d3014}.product img{width:100%;height:175px;object-fit:contain;background:linear-gradient(145deg,#f8fbf9,#f0f6f2);border-radius:12px;cursor:zoom-in;padding:8px}.product h4{margin:12px 2px 6px;color:#24473b}.product p{font-weight:900;color:var(--brand2);margin:9px 2px}.pill{display:inline-block;padding:5px 11px;border-radius:30px;background:#e5f4ed;color:#147354;font-size:11px;font-weight:800}
+.report-invoice{border:1px solid var(--line);border-radius:16px;padding:16px;margin:14px 0;background:#fff}.report-invoice h3{margin-bottom:8px}.report-meta{display:flex;gap:10px;flex-wrap:wrap;color:var(--muted);font-size:12px;margin:8px 0}.report-items{width:100%;min-width:500px}.report-total{font-weight:900;color:var(--brand2);font-size:16px;margin-top:12px}.inline-price{width:105px;margin:0;padding:7px 8px}.report-filter{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;align-items:end}.report-filter label{margin-bottom:2px}
+@media(max-width:700px){#productList{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}#productList .product{padding:8px;border-radius:13px}#productList .product img{height:118px;padding:4px}#productList .product h4{font-size:13px;line-height:1.5}#productList .product p{font-size:13px}#productList .product button{width:100%;padding:8px 5px;font-size:11px}.report-invoice{padding:11px}.report-meta{display:block}.report-meta span{display:block;margin:4px 0}.report-filter{grid-template-columns:1fr 1fr}.report-filter button{grid-column:1/-1}}
+#login{max-width:470px;margin:7vh auto;padding:30px;position:relative;overflow:hidden}#login:before{content:"✦";position:absolute;left:24px;top:15px;font-size:82px;color:#e8f4ed;line-height:1}#login h2,#login p,#login label,#login input,#login button,#login .notice{position:relative}#login h2{font-size:24px;margin-bottom:8px}#login>p{margin:0 0 20px}#login button{width:100%;padding:13px}.notice{padding:13px 15px;border-radius:13px;background:#fff8e7;border:1px solid #f4e6bd;color:#80631b;font-size:12px;line-height:1.9;margin-top:17px}.row{display:flex;gap:9px;align-items:center;flex-wrap:wrap}.row>*{flex:1}a{color:#087f63;font-weight:800;text-decoration:none}a:hover{text-decoration:underline}#coords{padding:9px 12px;background:#f3f8f5;border-radius:10px}
+@media(max-width:700px){header{padding:18px}header h1{font-size:21px}.wrap{margin:15px auto;padding:0 11px}.card{padding:16px;border-radius:16px}nav{position:static;padding:7px}.tab{padding:9px 12px;font-size:12px}.stats{grid-template-columns:repeat(2,minmax(0,1fr))}.stat b{font-size:19px}#login{margin:5vh auto;padding:22px}.product img{height:145px}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+<header><div><h1>مكتب الياسمين</h1><small>نظام إدارة المبيعات والمندوبين</small></div><div id="who" class="hidden"></div></header>
+<div class="wrap">
+<section id="login" class="card">
+<h2>تسجيل الدخول</h2>
+<p class="muted">أدخل البريد الإلكتروني وكلمة المرور المخصصة لحسابك.</p>
+<label>البريد الإلكتروني</label><input id="email" type="email" autocomplete="username" placeholder="name@example.com">
+<label>كلمة المرور</label><input id="password" type="password" autocomplete="current-password">
+<button id="loginBtn">دخول</button><p id="loginMsg" class="muted"></p>
+<div class="notice">يتم إنشاء حسابات المدير والمندوبين من Firebase Authentication بواسطة المدير. لا يوجد تسجيل عام حتى لا يستطيع أي شخص إنشاء حساب مندوب.</div>
+</section>
+
+<main id="app" class="hidden">
+<nav id="nav">
+<button class="tab active" data-page="dashboard">الرئيسية</button>
+<button class="tab" data-page="products">المنتجات</button>
+<button class="tab" data-page="customers">الزبائن</button>
+<button class="tab" data-page="sales">تسجيل بيع</button>
+<button class="tab manager-only" data-page="team">المندوبون</button>
+<button class="tab manager-only" data-page="reports">التقارير</button>
+<button id="logout" class="danger right">خروج</button>
+</nav>
+
+<section id="dashboard" class="page">
+<div class="card"><h2>لوحة التحكم</h2><p class="muted" id="welcome"></p><div class="stats">
+<div class="stat">إجمالي المبيعات المسجلة<b id="statSales">0 د.ع</b></div>
+<div class="stat">عدد الطلبات<b id="statOrders">0</b></div>
+<div class="stat">الزبائن المسجلون<b id="statCustomers">0</b></div>
+<div class="stat">الزيارات<b id="statVisits">0</b></div>
+</div></div>
+<div class="card"><h3>آخر المبيعات</h3><div class="tablewrap"><table><thead><tr><th>التاريخ</th><th>الزبون</th><th>المندوب</th><th>الإجمالي</th></tr></thead><tbody id="recentSales"></tbody></table></div></div>
+</section>
+
+<section id="products" class="page hidden">
+<div class="card manager-only"><h2>إضافة منتج</h2>
+<div class="grid"><div><label>اسم المنتج</label><input id="pName"></div><div><label>التصنيف</label><select id="pCategory"><option>أجباس</option><option>عصائر</option><option>حلويات</option></select></div><div><label>السعر بالدينار</label><input id="pPrice" type="number" min="0"></div><div><label>الكمية المتوفرة (اختياري)</label><input id="pQty" type="number" min="0"></div></div>
+<label>صورة المنتج من الهاتف أو الكمبيوتر</label><input id="pImage" type="file" accept="image/*"><button id="addProduct">حفظ المنتج</button><p id="productMsg" class="muted"></p></div>
+<div class="card"><h2>المنتجات</h2><div id="productList" class="grid"></div></div>
+</section>
+
+<section id="customers" class="page hidden">
+<div class="card"><h2>إضافة زبون جديد</h2><div class="grid">
+<div><label>اسم المحل</label><input id="cShop"></div><div><label>اسم صاحب المحل</label><input id="cName"></div><div><label>رقم الهاتف</label><input id="cPhone" type="tel"></div><div><label>العنوان / المنطقة</label><input id="cAddress"></div>
+</div><div class="row"><button id="getLocation" class="secondary">تحديد موقعي GPS</button><span id="coords" class="muted">لم يتم تحديد الموقع</span></div><button id="addCustomer">حفظ الزبون</button><p id="customerMsg" class="muted"></p></div>
+<div class="card"><h2>قاعدة بيانات الزبائن</h2><input id="customerSearch" placeholder="ابحث باسم المحل أو صاحب المحل أو الهاتف"><div class="tablewrap"><table><thead><tr><th>المحل / الزبون</th><th>الهاتف</th><th>الزيارات</th><th>آخر زيارة</th><th>الموقع</th><th>إجراء</th></tr></thead><tbody id="customerRows"></tbody></table></div><div id="customerHistory" class="hidden" style="margin-top:18px"></div></div>
+</section>
+
+<section id="sales" class="page hidden">
+<div class="card"><h2>تسجيل عملية بيع</h2><label>اختر الزبون المسجل</label><select id="saleCustomer"><option value="">اختر زبوناً</option></select>
+<div class="grid"><div><label>المنتج</label><select id="saleProduct"></select></div><div><label>الكمية</label><input id="saleQty" type="number" min="1" value="1"></div></div><button id="addLine" class="secondary">إضافة إلى الفاتورة</button>
+<div class="tablewrap"><table><thead><tr><th>المنتج</th><th>الكمية</th><th>السعر</th><th>المجموع</th><th></th></tr></thead><tbody id="cartRows"></tbody></table></div>
+<h3>الإجمالي: <span id="cartTotal">0</span> د.ع</h3><button id="saveSale">حفظ البيع وتسجيل الزيارة</button><p id="saleMsg" class="muted"></p></div>
+<div class="card"><h3>سجل مبيعاتي</h3><div class="tablewrap"><table><thead><tr><th>التاريخ</th><th>الزبون</th><th>المنتجات</th><th>الإجمالي</th></tr></thead><tbody id="mySales"></tbody></table></div></div>
+</section>
+
+<section id="team" class="page hidden">
+<div class="card"><h2>المندوبون</h2><p class="muted">أنشئ حساب المندوب من Firebase Authentication، ثم أضف مستنداً في مجموعة users بمعرّف UID الخاص به، واجعل role = rep و name = اسم المندوب. المدير role = manager.</p><div class="tablewrap"><table><thead><tr><th>اسم المندوب</th><th>البريد</th><th>UID</th></tr></thead><tbody id="teamRows"></tbody></table></div></div>
+</section>
+<section id="reports" class="page hidden">
+<div class="card"><h2>تقارير المبيعات التفصيلية</h2>
+<p class="muted">اختر اليوم والمندوب لمراجعة الفواتير والمحلات والمنتجات والكميات والأسعار ومواقع المحلات.</p>
+<div class="report-filter"><div><label>تاريخ التقرير</label><input id="reportDate" type="date"></div><div><label>المندوب</label><select id="reportRep"><option value="all">جميع المندوبين</option></select></div><button id="refreshReports">عرض التقرير</button></div>
+<div class="stats"><div class="stat">إجمالي المبيعات<b id="allSales">0 د.ع</b></div><div class="stat">عدد الفواتير<b id="allOrders">0</b></div><div class="stat">عدد المحلات<b id="reportShops">0</b></div><div class="stat">عدد القطع<b id="reportPieces">0</b></div></div>
+<div id="reportDetails"></div>
+<hr style="border:0;border-top:1px solid var(--line);margin:22px 0">
+<h3>ملخص المبيعات حسب المندوب</h3><div class="tablewrap"><table><thead><tr><th>المندوب</th><th>عدد الفواتير</th><th>الإجمالي</th></tr></thead><tbody id="reportRows"></tbody></table></div>
+</div>
+</section>
+</main>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<script>
+// 1) ضع بيانات مشروع Firebase هنا من إعدادات المشروع > تطبيق الويب.
+const firebaseConfig = {
+  apiKey: "AIzaSyD3U_QxiMj4RHYtrL3N7GAaDqoI-T_eFWI",
+  authDomain: "ofes-a05a2.firebaseapp.com",
+  projectId: "ofes-a05a2",
+  storageBucket: "ofes-a05a2.firebasestorage.app",
+  messagingSenderId: "186200656122",
+  appId: "1:186200656122:web:27daf33785c4154a48e143",
+  measurementId: "G-LSBG4G4LXW"
+};
+firebase.initializeApp(firebaseConfig);
+const auth=firebase.auth(), db=firebase.firestore();
+let me=null, profile=null, products=[], customers=[], sales=[], cart=[], coords=null, users=[];
+const $=id=>document.getElementById(id), money=n=>(Number(n)||0).toLocaleString('en-US');
+const dateNow=()=>new Date().toISOString();
+const localDateKey=value=>{const d=new Date(value);return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`};
+const dateLabel=value=>new Date(value).toLocaleString('ar-IQ');
+const sortNewest=arr=>arr.sort((a,b)=>new Date(b.createdAt||0)-new Date(a.createdAt||0));
+const safe=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const isManager=()=>profile?.role==='manager';
+function msg(id,t){$(id).textContent=t}
+function page(name){document.querySelectorAll('.page').forEach(x=>x.classList.add('hidden'));$(name).classList.remove('hidden');document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('active',x.dataset.page===name));if(name==='reports'&&isManager())renderDetailedReports();}
+document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>page(b.dataset.page)));
+$('logout').onclick=()=>auth.signOut();
+$('loginBtn').onclick=async()=>{msg('loginMsg','جارٍ تسجيل الدخول...');try{await auth.signInWithEmailAndPassword($('email').value.trim(),$('password').value);msg('loginMsg','')}catch(e){msg('loginMsg','تعذر الدخول: '+e.message)}};
+
+auth.onAuthStateChanged(async user=>{
+ me=user;
+ if(!user){$('login').classList.remove('hidden');$('app').classList.add('hidden');$('who').classList.add('hidden');return}
+ try{
+  const snap=await db.collection('users').doc(user.uid).get();
+  if(!snap.exists)throw new Error('حسابك غير مضاف إلى نظام المستخدمين. اطلب من المدير إضافته.');
+  profile={uid:user.uid,...snap.data()};
+  if(!['manager','rep'].includes(profile.role))throw new Error('صلاحية الحساب غير صحيحة.');
+  $('login').classList.add('hidden');$('app').classList.remove('hidden');$('who').classList.remove('hidden');
+  $('who').textContent=(profile.name||user.email)+' — '+(isManager()?'مدير':'مندوب');
+  document.querySelectorAll('.manager-only').forEach(x=>x.classList.toggle('hidden',!isManager()));
+  $('welcome').textContent='مرحباً '+(profile.name||user.email);
+  await loadAll();
+ }catch(e){alert(e.message);await auth.signOut()}
+});
+async function loadAll(){
+  try {
+    // المدير يرى جميع الزبائن، والمندوب يرى زبائنه فقط.
+    // تجنب طلب فهرس مركب إضافي: نجلب حسب الصلاحية ثم نرتب محلياً.
+    const customerQuery = isManager()
+      ? db.collection('customers').get()
+      : db.collection('customers').where('repId','==',me.uid).get();
+    const salesQuery = isManager()
+      ? db.collection('sales').get()
+      : db.collection('sales').where('repId','==',me.uid).get();
+
+    const [p,c,s] = await Promise.all([
+      db.collection('products').get(), customerQuery, salesQuery
+    ]);
+
+    products = sortNewest(p.docs.map(d=>({id:d.id,...d.data()})));
+    customers = sortNewest(c.docs.map(d=>({id:d.id,...d.data()})));
+    sales = sortNewest(s.docs.map(d=>({id:d.id,...d.data()})));
+
+    renderProducts();
+    renderCustomers();
+    renderSales();
+    renderDashboard();
+
+    if(isManager()) await loadManager();
+  } catch(e) {
+    console.error('Database error:', e);
+    alert('تعذر تحميل البيانات من Firebase: ' + e.message);
+  }
+}
+function renderProducts(){
+ $('productList').innerHTML=products.map(p=>`<div class="product">${p.imageUrl?`<img src="${p.imageUrl}" alt="${safe(p.name)}" onclick="window.open('${p.imageUrl}','_blank')">`:'<div style="height:150px;background:#f4f6f8;border-radius:10px;display:grid;place-items:center">بدون صورة</div>'}<h4>${safe(p.name)}</h4><span class="pill">${safe(p.category)}</span><p>${money(p.price)} د.ع</p>${isManager()?`<button class="danger" onclick="deleteProduct('${p.id}')">حذف</button>`:''}</div>`).join('')||'<p class="muted">لا توجد منتجات بعد.</p>';
+ $('saleProduct').innerHTML=products.map(p=>`<option value="${p.id}">${safe(p.name)} — ${money(p.price)} د.ع</option>`).join('');
+}
+// ضغط الصورة داخل المتصفح ثم حفظها كـ Data URL داخل مستند المنتج في Firestore.
+// هذا بديل مجاني لـ Firebase Storage، مع حد محافظ لتجنب تجاوز حجم مستند Firestore.
+async function compressProductImage(file){
+ if(!file) return '';
+ if(!file.type || !file.type.startsWith('image/')) throw Error('الملف المحدد ليس صورة صالحة.');
+ if(file.size > 12 * 1024 * 1024) throw Error('حجم الصورة الأصلية كبير جداً. اختر صورة أقل من 12 ميغابايت.');
+ const sourceUrl = await new Promise((resolve,reject)=>{
+   const reader=new FileReader();
+   reader.onload=()=>resolve(reader.result);
+   reader.onerror=()=>reject(new Error('تعذر قراءة ملف الصورة.'));
+   reader.readAsDataURL(file);
+ });
+ const img=await new Promise((resolve,reject)=>{
+   const image=new Image();
+   image.onload=()=>resolve(image);
+   image.onerror=()=>reject(new Error('تعذر فتح الصورة. جرّب صورة بصيغة JPG أو PNG.'));
+   image.src=sourceUrl;
+ });
+ const maxSide=1000, scale=Math.min(1,maxSide/Math.max(img.width,img.height));
+ const canvas=document.createElement('canvas');
+ canvas.width=Math.max(1,Math.round(img.width*scale));
+ canvas.height=Math.max(1,Math.round(img.height*scale));
+ const ctx=canvas.getContext('2d');
+ if(!ctx) throw Error('المتصفح لا يدعم معالجة الصور.');
+ ctx.fillStyle='#ffffff';ctx.fillRect(0,0,canvas.width,canvas.height);
+ ctx.drawImage(img,0,0,canvas.width,canvas.height);
+ let quality=0.78, dataUrl=canvas.toDataURL('image/jpeg',quality);
+ while(dataUrl.length > 650000 && quality > 0.40){
+   quality-=0.08;
+   dataUrl=canvas.toDataURL('image/jpeg',quality);
+ }
+ if(dataUrl.length > 650000) throw Error('الصورة لا تزال كبيرة بعد الضغط. اختر صورة أصغر أو قصّها ثم أعد المحاولة.');
+ return dataUrl;
+}
+
+$('addProduct').onclick=async()=>{
+ const button=$('addProduct');
+ button.disabled=true;
+ try{
+   let name=$('pName').value.trim(),price=Number($('pPrice').value);
+   if(!name || $('pPrice').value.trim()==='' || price<0 || !Number.isFinite(price)) throw Error('أدخل اسم المنتج والسعر بشكل صحيح.');
+   const file=$('pImage').files[0];
+   msg('productMsg',file?'جارٍ ضغط الصورة وحفظ المنتج...':'جارٍ حفظ المنتج...');
+   const imageUrl=await compressProductImage(file);
+   await db.collection('products').add({name,price,category:$('pCategory').value,quantity:Number($('pQty').value)||0,imageUrl,createdAt:dateNow(),createdBy:me.uid});
+   $('pName').value='';$('pPrice').value='';$('pQty').value='';$('pImage').value='';
+   msg('productMsg','تم حفظ المنتج بنجاح.');
+   await loadAll();
+ }catch(e){
+   console.error('Product save error:',e);
+   msg('productMsg','خطأ: '+(e.message||'تعذر حفظ المنتج.'));
+ }finally{button.disabled=false;}
+};
+window.deleteProduct=async id=>{if(confirm('هل تريد حذف المنتج؟')){await db.collection('products').doc(id).delete();await loadAll()}};
+
+$('getLocation').onclick=()=>{if(!navigator.geolocation)return msg('customerMsg','المتصفح لا يدعم تحديد الموقع.');msg('customerMsg','جارٍ تحديد الموقع...');navigator.geolocation.getCurrentPosition(pos=>{coords={lat:pos.coords.latitude,lng:pos.coords.longitude};$('coords').textContent=coords.lat.toFixed(6)+', '+coords.lng.toFixed(6);msg('customerMsg','تم تحديد الموقع.')},e=>msg('customerMsg','تعذر تحديد الموقع: '+e.message),{enableHighAccuracy:true,timeout:15000})};
+$('addCustomer').onclick=async()=>{
+ const button=$('addCustomer');button.disabled=true;
+ try{
+   let shop=$('cShop').value.trim(),name=$('cName').value.trim(),phone=$('cPhone').value.trim();
+   if(!shop||!phone)throw Error('اسم المحل ورقم الهاتف مطلوبان.');
+   await db.collection('customers').add({shop,name,phone,address:$('cAddress').value.trim(),location:coords,repId:me.uid,repName:profile.name||me.email,visits:0,lastVisit:null,createdAt:dateNow()});
+   ['cShop','cName','cPhone','cAddress'].forEach(id=>$(id).value='');coords=null;$('coords').textContent='لم يتم تحديد الموقع';
+   msg('customerMsg','تم حفظ الزبون.');await loadAll();
+ }catch(e){console.error('Customer save error:',e);msg('customerMsg','خطأ: '+(e.message||'تعذر حفظ الزبون.'))}
+ finally{button.disabled=false;}
+};
+function renderCustomers(){
+ const q=$('customerSearch').value.trim().toLowerCase();
+ let list=customers.filter(c=>[c.shop,c.name,c.phone].join(' ').toLowerCase().includes(q));
+ $('customerRows').innerHTML=list.map(c=>`<tr><td>${safe(c.shop)}<br><small>${safe(c.name||'')}</small></td><td>${safe(c.phone)}</td><td>${c.visits||0}</td><td>${c.lastVisit?new Date(c.lastVisit).toLocaleString('ar-IQ'): '—'}</td><td>${c.location?`<a target="_blank" href="https://www.google.com/maps?q=${c.location.lat},${c.location.lng}">فتح الخريطة</a>`:'غير محدد'}</td><td><button class="secondary" onclick="visitCustomer('${c.id}')">تسجيل زيارة</button><button onclick="viewCustomerHistory('${c.id}')">تفاصيل المشتريات</button></td></tr>`).join('')||'<tr><td colspan="6">لا يوجد زبائن.</td></tr>';
+ $('saleCustomer').innerHTML='<option value="">اختر زبوناً</option>'+customers.map(c=>`<option value="${c.id}">${safe(c.shop)} — ${safe(c.phone)}</option>`).join('');
+}
+$('customerSearch').addEventListener('input',renderCustomers);
+window.visitCustomer=async id=>{let c=customers.find(x=>x.id===id);await db.collection('customers').doc(id).update({visits:(c.visits||0)+1,lastVisit:dateNow()});await db.collection('customers').doc(id).collection('visits').add({repId:me.uid,repName:profile.name||me.email,date:dateNow()});await loadAll();alert('تم تسجيل الزيارة.')};
+$('addLine').onclick=()=>{let p=products.find(x=>x.id===$('saleProduct').value),qty=Number($('saleQty').value);if(!p||qty<1)return alert('اختر منتجاً وكمية صحيحة.');let old=cart.find(x=>x.productId===p.id);if(old)old.qty+=qty;else cart.push({productId:p.id,name:p.name,price:Number(p.price),originalPrice:Number(p.price),qty});renderCart()};
+function renderCart(){$('cartRows').innerHTML=cart.map((x,i)=>`<tr><td>${safe(x.name)}</td><td>${x.qty}</td><td><input class="inline-price" type="number" min="0" step="1" value="${Number(x.price)||0}" aria-label="سعر ${safe(x.name)}" onchange="updateCartPrice(${i},this.value)"></td><td>${money(x.price*x.qty)}</td><td><button class="danger" onclick="removeLine(${i})">حذف</button></td></tr>`).join('');$('cartTotal').textContent=money(cart.reduce((a,x)=>a+x.price*x.qty,0))}
+window.updateCartPrice=(i,value)=>{const price=Number(value);if(!Number.isFinite(price)||price<0){alert('أدخل سعراً صحيحاً.');renderCart();return}cart[i].price=price;renderCart()};
+window.removeLine=i=>{cart.splice(i,1);renderCart()};
+$('saveSale').onclick=async()=>{
+ const button=$('saveSale');button.disabled=true;
+ try{let customer=customers.find(c=>c.id===$('saleCustomer').value);if(!customer)throw Error('اختر زبوناً.');if(!cart.length)throw Error('أضف منتجاً واحداً على الأقل.');
+ let total=cart.reduce((a,x)=>a+x.price*x.qty,0),now=dateNow();
+ await db.collection('sales').add({customerId:customer.id,customerShop:customer.shop,customerName:customer.name||'',customerPhone:customer.phone||'',customerAddress:customer.address||'',customerLocation:customer.location||null,items:cart.map(x=>({...x,lineTotal:Number(x.price)*Number(x.qty)})),total,pieces:cart.reduce((n,x)=>n+Number(x.qty||0),0),repId:me.uid,repName:profile.name||me.email,createdAt:now});
+ await db.collection('customers').doc(customer.id).update({visits:(customer.visits||0)+1,lastVisit:now});
+ await db.collection('customers').doc(customer.id).collection('visits').add({repId:me.uid,repName:profile.name||me.email,date:now,type:'sale'});
+ cart=[];renderCart();msg('saleMsg','تم حفظ عملية البيع وتسجيل الزيارة.');await loadAll();
+ }catch(e){console.error('Save sale error:',e);msg('saleMsg','خطأ: '+(e.message||'تعذر حفظ الفاتورة.'))}finally{button.disabled=false;}
+};
+function renderSales(){
+ $('mySales').innerHTML=sales.map(s=>`<tr><td>${new Date(s.createdAt).toLocaleString('ar-IQ')}</td><td>${safe(s.customerShop)}</td><td>${(s.items||[]).map(i=>safe(i.name)+' × '+i.qty).join('، ')}</td><td>${money(s.total)} د.ع</td></tr>`).join('')||'<tr><td colspan="4">لا توجد مبيعات.</td></tr>';
+}
+function renderDashboard(){
+ let total=sales.reduce((a,s)=>a+(Number(s.total)||0),0),visits=customers.reduce((a,c)=>a+(Number(c.visits)||0),0);
+ $('statSales').textContent=money(total)+' د.ع';$('statOrders').textContent=sales.length;$('statCustomers').textContent=customers.length;$('statVisits').textContent=visits;
+ $('recentSales').innerHTML=sales.slice(0,8).map(s=>`<tr><td>${new Date(s.createdAt).toLocaleDateString('ar-IQ')}</td><td>${safe(s.customerShop)}</td><td>${safe(s.repName)}</td><td>${money(s.total)} د.ع</td></tr>`).join('')||'<tr><td colspan="4">لا توجد بيانات.</td></tr>';
+}
+async function loadManager(){
+ const u=await db.collection('users').where('role','==','rep').get();users=u.docs.map(d=>({uid:d.id,...d.data()}));
+ $('teamRows').innerHTML=users.map(x=>`<tr><td>${safe(x.name||'—')}</td><td>${safe(x.email||'—')}</td><td><small>${safe(x.uid)}</small></td></tr>`).join('');
+ $('reportRep').innerHTML='<option value="all">جميع المندوبين</option>'+users.map(x=>`<option value="${x.uid}">${safe(x.name||x.email||x.uid)}</option>`).join('');
+ const by={};sales.forEach(s=>{const k=s.repId||'unknown';by[k]??={name:s.repName||k,count:0,total:0};by[k].count++;by[k].total+=Number(s.total)||0});
+ $('reportRows').innerHTML=Object.values(by).map(x=>`<tr><td>${safe(x.name)}</td><td>${x.count}</td><td>${money(x.total)} د.ع</td></tr>`).join('')||'<tr><td colspan="3">لا توجد مبيعات.</td></tr>';
+ if(!$('reportDate').value)$('reportDate').value=localDateKey(new Date());
+ renderDetailedReports();
+}
+function renderDetailedReports(){
+ if(!isManager())return;
+ const day=$('reportDate').value||localDateKey(new Date()),rep=$('reportRep').value||'all';
+ const daySales=sales.filter(s=>localDateKey(s.createdAt)===day&&(rep==='all'||s.repId===rep));
+ const shopIds=new Set(daySales.map(s=>s.customerId||s.customerShop));
+ const pieces=daySales.reduce((n,s)=>n+(Number(s.pieces)|| (s.items||[]).reduce((a,i)=>a+Number(i.qty||0),0)),0);
+ const total=daySales.reduce((n,s)=>n+Number(s.total||0),0);
+ $('allSales').textContent=money(total)+' د.ع';$('allOrders').textContent=daySales.length;$('reportShops').textContent=shopIds.size;$('reportPieces').textContent=pieces;
+ if(!daySales.length){$('reportDetails').innerHTML='<p class="muted">لا توجد فواتير لهذا التاريخ والاختيار.</p>';return}
+ $('reportDetails').innerHTML=daySales.map((sale,index)=>{
+   const customer=customers.find(c=>c.id===sale.customerId)||{};
+   const location=sale.customerLocation||customer.location;
+   const address=sale.customerAddress||customer.address||'لم يسجل عنوان';
+   const map=location&&Number.isFinite(Number(location.lat))&&Number.isFinite(Number(location.lng))?`<a target="_blank" rel="noopener" href="https://www.google.com/maps?q=${encodeURIComponent(location.lat+','+location.lng)}">فتح موقع المحل على الخريطة</a>`:'لم يتم تسجيل موقع GPS';
+   const items=(sale.items||[]).map(item=>`<tr><td>${safe(item.name||'منتج')}</td><td>${Number(item.qty)||0}</td><td>${money(item.price)} د.ع</td><td>${money(Number(item.lineTotal??(Number(item.price||0)*Number(item.qty||0))))} د.ع</td></tr>`).join('');
+   return `<article class="report-invoice"><h3>فاتورة ${index+1} — ${safe(sale.customerShop||'محل غير مسمى')}</h3><div class="report-meta"><span>المندوب: ${safe(sale.repName||'غير محدد')}</span><span>التاريخ: ${safe(dateLabel(sale.createdAt))}</span><span>صاحب المحل: ${safe(sale.customerName||customer.name||'غير مسجل')}</span><span>الهاتف: ${safe(sale.customerPhone||customer.phone||'غير مسجل')}</span></div><p class="muted">العنوان: ${safe(address)} — ${map}</p><div class="tablewrap"><table class="report-items"><thead><tr><th>البضاعة</th><th>الكمية</th><th>سعر القطعة</th><th>الإجمالي</th></tr></thead><tbody>${items}</tbody></table></div><div class="report-total">إجمالي الفاتورة: ${money(sale.total)} د.ع</div></article>`;
+ }).join('');
+}
+$('refreshReports').onclick=renderDetailedReports;
+$('reportDate').addEventListener('change',renderDetailedReports);
+$('reportRep').addEventListener('change',renderDetailedReports);
+window.viewCustomerHistory=id=>{
+ const c=customers.find(x=>x.id===id);if(!c)return;
+ const history=sales.filter(s=>s.customerId===id).sort((a,b)=>new Date(b.createdAt)-new Date(a.createdAt));
+ const box=$('customerHistory');box.classList.remove('hidden');
+ const loc=c.location&&Number.isFinite(Number(c.location.lat))&&Number.isFinite(Number(c.location.lng))?`<a target="_blank" rel="noopener" href="https://www.google.com/maps?q=${encodeURIComponent(c.location.lat+','+c.location.lng)}">فتح موقع المحل على الخريطة</a>`:'لم يسجل موقع GPS';
+ box.innerHTML=`<h3>مشتريات ${safe(c.shop)} — ${safe(c.name||'')}</h3><p class="muted">الهاتف: ${safe(c.phone||'')} | العنوان: ${safe(c.address||'غير مسجل')} | ${loc}</p>${history.length?history.map(s=>`<article class="report-invoice"><h3>فاتورة ${safe(dateLabel(s.createdAt))}</h3><p class="muted">المندوب: ${safe(s.repName||'')}</p><div class="tablewrap"><table class="report-items"><thead><tr><th>المنتج</th><th>الكمية</th><th>سعر القطعة</th><th>الإجمالي</th></tr></thead><tbody>${(s.items||[]).map(i=>`<tr><td>${safe(i.name)}</td><td>${Number(i.qty)||0}</td><td>${money(i.price)} د.ع</td><td>${money(i.lineTotal??(Number(i.price||0)*Number(i.qty||0)))} د.ع</td></tr>`).join('')}</tbody></table></div><div class="report-total">إجمالي الفاتورة: ${money(s.total)} د.ع</div></article>`).join(''):'<p class="muted">لا توجد فواتير مسجلة لهذا المحل.</p>'}`;
+ box.scrollIntoView({behavior:'smooth',block:'start'});
+};
+
+</script>
+</body></html>
